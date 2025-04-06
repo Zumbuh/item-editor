@@ -7,7 +7,7 @@ import at.dumphey.itemeditor.itemeditor.modules.flags.ItemFlagUtils;
 import at.dumphey.itemeditor.ui.template.UiItem;
 import at.dumphey.itemeditor.ui.template.UiScreen;
 import at.dumphey.itemeditor.utils.ItemBuilder;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemFlag;

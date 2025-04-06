@@ -28,9 +28,9 @@ public class RemoveAttributeUiItem extends AttributeUiItem {
     @Override
     protected ItemStack onRender() {
         return ItemBuilder.of(CompatUtils.either(fancyAttributeMaterials.get(attribute), Material.PAPER))
-                .withName("§e" + NameUtils.enumToFriendlyName(attribute))
-                .withLore("§fSlot: §e" + NameUtils.enumToFriendlyName(modifier.getSlot()),
-                        "§fOperation: §e" + NameUtils.enumToFriendlyName(modifier.getOperation()),
+                .withName("§e" + NameUtils.enumToFriendlyName(attribute.name()))
+                .withLore("§fSlot: §e" + NameUtils.enumToFriendlyName(modifier.getSlot().name()),
+                        "§fOperation: §e" + NameUtils.enumToFriendlyName(modifier.getOperation().name()),
                         "§fValue: §e" + modifier.getAmount(), "", "§8§l* §8Click to §cremove §8attribute")
                 .build();
     }
@@ -39,8 +39,9 @@ public class RemoveAttributeUiItem extends AttributeUiItem {
     protected void onClick(ClickType clickType) {
         if (clickType.isLeftClick()) {
             modifyItem(item -> ItemBuilder.of(item).withoutAttribute(attribute, modifier).build());
-            Messages.send(player, "Removed attribute modifier §o" + NameUtils.enumToFriendlyName(attribute));
+            Messages.send(player, "Removed attribute modifier §o" + NameUtils.enumToFriendlyName(attribute.name()));
             open(new ManageAttributesUiScreen(player));
         }
     }
+
 }

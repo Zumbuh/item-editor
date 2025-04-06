@@ -13,25 +13,25 @@ public class EnchantUtils {
     private static final Map<Enchantment, Material> fancyMaterials = new HashMap<>();
 
     static {
-        addFancyMaterial(Material.BOW, Enchantment.ARROW_DAMAGE, Enchantment.ARROW_FIRE, Enchantment.ARROW_INFINITE,
-                Enchantment.ARROW_KNOCKBACK);
+        addFancyMaterial(Material.BOW, Enchantment.POWER, Enchantment.FLAME, Enchantment.INFINITY,
+                Enchantment.PUNCH);
         addFancyMaterial(Material.TRIDENT, Enchantment.CHANNELING, Enchantment.RIPTIDE, Enchantment.LOYALTY,
                 Enchantment.IMPALING);
-        addFancyMaterial(Material.GOLDEN_SWORD, Enchantment.DAMAGE_ALL, Enchantment.DAMAGE_ARTHROPODS,
-                Enchantment.DAMAGE_UNDEAD, Enchantment.FIRE_ASPECT, Enchantment.KNOCKBACK, Enchantment.LOOT_BONUS_MOBS,
+        addFancyMaterial(Material.GOLDEN_SWORD, Enchantment.SHARPNESS, Enchantment.BANE_OF_ARTHROPODS,
+                Enchantment.SMITE, Enchantment.FIRE_ASPECT, Enchantment.KNOCKBACK, Enchantment.LOOTING,
                 Enchantment.SWEEPING_EDGE);
-        addFancyMaterial(Material.DIAMOND_PICKAXE, Enchantment.LOOT_BONUS_BLOCKS, Enchantment.DIG_SPEED,
+        addFancyMaterial(Material.DIAMOND_PICKAXE, Enchantment.FORTUNE, Enchantment.EFFICIENCY,
                 Enchantment.SILK_TOUCH);
-        addFancyMaterial(Material.IRON_BOOTS, Enchantment.PROTECTION_FALL, Enchantment.FROST_WALKER,
+        addFancyMaterial(Material.IRON_BOOTS, Enchantment.FEATHER_FALLING, Enchantment.FROST_WALKER,
                 Enchantment.DEPTH_STRIDER);
-        addFancyMaterial(Material.LEATHER_CHESTPLATE, Enchantment.PROTECTION_ENVIRONMENTAL,
-                Enchantment.PROTECTION_EXPLOSIONS, Enchantment.PROTECTION_FIRE, Enchantment.PROTECTION_PROJECTILE,
+        addFancyMaterial(Material.LEATHER_CHESTPLATE, Enchantment.PROTECTION,
+                Enchantment.BLAST_PROTECTION, Enchantment.FIRE_PROTECTION, Enchantment.PROJECTILE_PROTECTION,
                 Enchantment.THORNS);
-        addFancyMaterial(Material.TURTLE_HELMET, Enchantment.WATER_WORKER, Enchantment.OXYGEN);
-        addFancyMaterial(Material.OBSIDIAN, Enchantment.DURABILITY);
+        addFancyMaterial(Material.TURTLE_HELMET, Enchantment.AQUA_AFFINITY, Enchantment.RESPIRATION);
+        addFancyMaterial(Material.OBSIDIAN, Enchantment.UNBREAKING);
         addFancyMaterial(Material.WITHER_SKELETON_SKULL, Enchantment.BINDING_CURSE, Enchantment.VANISHING_CURSE);
         addFancyMaterial(Material.EXPERIENCE_BOTTLE, Enchantment.MENDING);
-        addFancyMaterial(Material.FISHING_ROD, Enchantment.LURE, Enchantment.LUCK);
+        addFancyMaterial(Material.FISHING_ROD, Enchantment.LURE, Enchantment.LUCK_OF_THE_SEA);
 
         if (ItemEditor.INSTANCE.getCompatUtils().getMajorVersion() >= 14) {
             addFancyMaterial(Material.getMaterial("CROSSBOW"), getByEnumName("MULTISHOT"),

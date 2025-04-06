@@ -24,18 +24,18 @@ public abstract class AttributeUiItem extends UiItem {
     }
 
     private static void initFancyAttributeMaterials() {
-        fancyAttributeMaterials.put(Attribute.GENERIC_ARMOR, Material.IRON_CHESTPLATE);
-        fancyAttributeMaterials.put(Attribute.GENERIC_ARMOR_TOUGHNESS, Material.DIAMOND_CHESTPLATE);
-        fancyAttributeMaterials.put(Attribute.GENERIC_ATTACK_DAMAGE, Material.DIAMOND_SWORD);
-        fancyAttributeMaterials.put(Attribute.GENERIC_ATTACK_SPEED, Material.WOODEN_SWORD);
-        fancyAttributeMaterials.put(Attribute.GENERIC_FLYING_SPEED, Material.ELYTRA);
-        fancyAttributeMaterials.put(Attribute.GENERIC_FOLLOW_RANGE, Material.WHEAT);
-        fancyAttributeMaterials.put(Attribute.GENERIC_KNOCKBACK_RESISTANCE, Material.SLIME_BLOCK);
-        fancyAttributeMaterials.put(Attribute.GENERIC_LUCK, Material.DIAMOND);
-        fancyAttributeMaterials.put(Attribute.GENERIC_MAX_HEALTH, Material.ENCHANTED_GOLDEN_APPLE);
-        fancyAttributeMaterials.put(Attribute.GENERIC_MOVEMENT_SPEED, Material.LEATHER_BOOTS);
-        fancyAttributeMaterials.put(Attribute.HORSE_JUMP_STRENGTH, Material.HORSE_SPAWN_EGG);
-        fancyAttributeMaterials.put(Attribute.ZOMBIE_SPAWN_REINFORCEMENTS, Material.ZOMBIE_SPAWN_EGG);
+        fancyAttributeMaterials.put(Attribute.ARMOR, Material.IRON_CHESTPLATE);
+        fancyAttributeMaterials.put(Attribute.ARMOR_TOUGHNESS, Material.DIAMOND_CHESTPLATE);
+        fancyAttributeMaterials.put(Attribute.ATTACK_DAMAGE, Material.DIAMOND_SWORD);
+        fancyAttributeMaterials.put(Attribute.ATTACK_SPEED, Material.WOODEN_SWORD);
+        fancyAttributeMaterials.put(Attribute.FLYING_SPEED, Material.ELYTRA);
+        fancyAttributeMaterials.put(Attribute.FOLLOW_RANGE, Material.WHEAT);
+        fancyAttributeMaterials.put(Attribute.KNOCKBACK_RESISTANCE, Material.SLIME_BLOCK);
+        fancyAttributeMaterials.put(Attribute.LUCK, Material.DIAMOND);
+        fancyAttributeMaterials.put(Attribute.MAX_HEALTH, Material.ENCHANTED_GOLDEN_APPLE);
+        fancyAttributeMaterials.put(Attribute.MOVEMENT_SPEED, Material.LEATHER_BOOTS);
+        fancyAttributeMaterials.put(Attribute.JUMP_STRENGTH, Material.HORSE_SPAWN_EGG);
+        fancyAttributeMaterials.put(Attribute.SPAWN_REINFORCEMENTS, Material.ZOMBIE_SPAWN_EGG);
     }
 
     private static void initEquipmentSlotMaterials() {

@@ -14,7 +14,7 @@ public class ItemFlagUtils {
         fancyMaterials.put(ItemFlag.HIDE_ENCHANTS, Material.ENCHANTED_BOOK);
         fancyMaterials.put(ItemFlag.HIDE_DESTROYS, Material.WOODEN_PICKAXE);
         //fancyMaterials.put(ItemFlag.HIDE_DYE, Material.ORANGE_DYE);
-        fancyMaterials.put(ItemFlag.HIDE_POTION_EFFECTS, Material.POTION);
+        fancyMaterials.put(ItemFlag.HIDE_ADDITIONAL_TOOLTIP, Material.POTION);
         fancyMaterials.put(ItemFlag.HIDE_UNBREAKABLE, Material.BEDROCK);
         fancyMaterials.put(ItemFlag.HIDE_PLACED_ON, Material.GRASS_BLOCK);
         fancyMaterials.put(ItemFlag.HIDE_ATTRIBUTES, Material.BOOK);

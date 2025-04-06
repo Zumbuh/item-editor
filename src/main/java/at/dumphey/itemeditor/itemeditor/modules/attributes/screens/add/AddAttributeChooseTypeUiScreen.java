@@ -8,7 +8,9 @@ import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AddAttributeChooseTypeUiScreen extends UiScreen {
     public AddAttributeChooseTypeUiScreen(Player player) {
@@ -16,8 +18,12 @@ public class AddAttributeChooseTypeUiScreen extends UiScreen {
     }
 
     private List<Attribute> getAttributes() {
-        return UiUtils.sortedByEnumName(Arrays.asList(Attribute.values()));
+        return Arrays.asList(Attribute.values()).stream()
+                .sorted(Comparator.comparing(attribute -> attribute.name()))
+                .collect(Collectors.toList());
     }
+
+
 
     @Override
     protected void onUpdate() {
