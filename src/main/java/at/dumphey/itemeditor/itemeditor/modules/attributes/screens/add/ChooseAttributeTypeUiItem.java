@@ -4,6 +4,8 @@ import at.dumphey.itemeditor.itemeditor.modules.attributes.items.AttributeUiItem
 import at.dumphey.itemeditor.ui.template.UiScreen;
 import at.dumphey.itemeditor.utils.ItemBuilder;
 import at.dumphey.itemeditor.utils.NameUtils;
+import org.bukkit.Keyed;
+import org.bukkit.NamespacedKey;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -22,7 +24,7 @@ public class ChooseAttributeTypeUiItem extends AttributeUiItem {
     @Override
     protected ItemStack onRender() {
         return ItemBuilder.uiItem(AttributeUiItem.getAttributeMaterial(attribute),
-                NameUtils.enumToFriendlyName(attribute.toString()), "Click to choose this type");
+                NameUtils.enumToFriendlyName(((Keyed) attribute).getKey().getKey()), "Click to choose this type");
     }
 
     @Override
