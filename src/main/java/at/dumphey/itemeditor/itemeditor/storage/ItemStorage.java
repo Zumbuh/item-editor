@@ -5,7 +5,6 @@ import com.google.common.hash.Hashing;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
-import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -96,7 +95,7 @@ public class ItemStorage {
         dataOutput.writeUTF(item.getName());
         dataOutput.writeObject(item.getItemStack());
         dataOutput.close();
-        return Base64Coder.encodeLines(outputStream.toByteArray());
+        return Base64.getEncoder().encodeToString(outputStream.toByteArray());
 
     }
 
